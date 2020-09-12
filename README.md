@@ -11,6 +11,7 @@ This group project was created to build our first full-stack app.  This web-app 
 * [Allison Barnard](https://github.com/allisonbarnard07)
 * [Josh Panakkal](https://github.com/jpanakkal22)
 * [Haymonot Wolde](https://github.com/haymanotyealemu)
+* [Justin Roose](https//github.com/jdouglasr)
 * [Michael Marcucci](https//github.com/kitetsu3)
 
 
@@ -28,5 +29,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 There are no tests currently.  Please make sure to update tests as appropriate.
 
 ### __Questions__
-- Find me on [Github](https//github.com/jdouglasr)!
-- For further information or questions, email me at justin.d.roose@gmail.com
+- _For further information or questions, find us on Github through our links under 
+**Collaborators**!_
