@@ -1,6 +1,6 @@
 
 # __*Build&Flex*__
-![GitHub](https://img.shields.io/github/license/jdouglasr/Build-Flex)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## __License__
 MIT
 
@@ -8,10 +8,10 @@ MIT
 This group project was created to build our first full-stack app.  This web-app is for users who want to create a running challenge for themselves and keep track of the progress.  Deployed Heroku can be found at https://projecttwo-cwru.herokuapp.com/
 
 ## __Collaborators__
-[Allison Barnard](https://github.com/allisonbarnard07)
-[Josh Panakkal](https://github.com/jpanakkal22)
-[Haymonot Wolde](https://github.com/haymanotyealemu)
-[Michael Marcucci](https//github.com/)
+* [Allison Barnard](https://github.com/allisonbarnard07)
+* [Josh Panakkal](https://github.com/jpanakkal22)
+* [Haymonot Wolde](https://github.com/haymanotyealemu)
+* [Michael Marcucci](https//github.com/kitetsu3)
 
 
 ### __Installation__
