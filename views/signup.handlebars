@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 welcome lead">Welcome to Build&Flex</div>
+        <div class="col-md-4"></div>
+        <div class="col-md-6 signUp">
+            <div class="card specialCard bg-light mb-3">
+                <div class="card-header">
+                    <h1 class="text-center">Sign Up</h1>
+                    <p class="textYellow text-center">Please fill in this form to create an account!</p>
+                </div>
+                <div class="card-body">
+                    <form class="signup needs-validation " action="/api/signup" method="POST" id="identicalForm"
+                        novalidate>
+                        <div class="form-row" style="margin-bottom: 1rem;">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="firstNameInput">First Name</label>
+                                    <input type="text" class="form-control" name="firstName" id="firstname-input"
+                                        placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        You must enter your first name.
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="lastNameInput">Last Name</label>
+                                    <input type="text" class="form-control" name="firstName" id="lastname-input"
+                                        placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        You must enter your last name.
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="ageInput">Age</label>
+                                    <input type="text" name="age" class="form-control" id="ageInput" placeholder="">
+                                    <small id="ageHelpInline" class="text-muted">Optional</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" novalidate>
+                            <label for="emailInput">Email address</label>
+                            <input type="email" name="email" class="form-control" id="emailInput"
+                                aria-describedby="emailHelp" required>
+                            <div class="invalid-feedback">
+                                You must enter a valid email address.
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group" novalidate>
+                            <label for="password-input">Password</label>
+                            <input type="password" name="password" class="form-control" id="password-input" required>
+                            <small id="passwordHelpInline" class="text-muted">
+                                Must be 8-20 characters long.
+                            </small>
+                        </div>
+                        <div class="form-group" novalidate>
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password" class="form-control" id="passwordConfirm" required>
+                            <small class="text-muted">
+                                Password must match to continue.
+                            </small>
+                        </div>
+                        <div class="form-group form-check" novalidate>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">I accept the <a href="">Terms of Use</a>
+                                and <a href="">Privacy Policy</a></label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-warning">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

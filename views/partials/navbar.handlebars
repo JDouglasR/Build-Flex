@@ -1,0 +1,29 @@
+<div class="container-fluid"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #292e29">
+        <a class="navbar-brand textYellow" href="/"><strong>B&F</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/members">Challenges</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                {{# if loggedin}}
+                <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                {{else}}
+                <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+</div>

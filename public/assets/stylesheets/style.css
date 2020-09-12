@@ -1,0 +1,62 @@
+body {
+    background-image: url("/img/tegan-mierle-ioyEITUD2G8-unsplash.jpg");
+    background-size: cover;
+    }
+    body > .grid {
+    height: 100%;
+    }
+    .image {
+    margin-top: -100px;
+    }
+    .column {
+    max-width: 450px;
+}
+
+.crd1,
+.crd2,
+.signUp,
+.logIn,
+.jumbotron,
+.walking {
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+.walking-form {
+    margin-top: 20px;
+}
+.form-group.required .form-control.required :after { 
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 8px;
+    top:7px;
+}
+
+.textYellow {
+  color: rgb(214, 147, 16);
+}
+
+a.textYellow:hover{
+  color: #969590;
+}
+.welcome {
+    font-size: 3rem;
+    margin-top: 200px;
+    color: rgb(255, 179, 28);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.navbar-brand.textYellow {
+    color: rgb(214, 147, 16)
+}
+
+.specialCard {
+    background-color: rgba(245, 245, 245, 1);
+    opacity: .9;
+}
+
+.challenge-type {
+   justify-content: center;
+}

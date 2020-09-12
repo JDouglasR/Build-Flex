@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 walking">
+            <div class="card bg-light mb-3 specialCard text-center">
+                <div class="card-header">
+                    <h1>Walking Challenge</h1>
+                    <p class="textYellow">Please fill in this form to add your challenge.</p>
+                </div>
+                <div class="card-body">
+                    <form class="walking-form" action="/api/walking" method="POST">
+                        <div class="form-group row">
+                            <label for="walking-goal" class="col-sm-2 col-form-label">Goals:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="walking-goal" name="goal" placeholder="What is your goal for this challenge">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="walking-steps" class="col-sm-2 col-form-label">Steps:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="walking-steps" name="steps" placeholder="Enter goal for steps.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="walking-duration" class="col-sm-2 col-form-label">Duration:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="walking-duration" name="duration" placeholder="Enter goal for time to complete.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="walking-miles" class="col-sm-2 col-form-label">Miles:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="walking-miles" name="miles" placeholder="Enter goal for miles.">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-warning">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

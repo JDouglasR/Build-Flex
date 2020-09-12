@@ -1,0 +1,33 @@
+
+<div class="container-fluid">
+    <div class="jumbotron text-center specialCard">
+        <h1>Welcome To Workout Collections {{ firstName }}</h1>
+        <h3>Lets Get Started!</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 members">
+            <div class="card bg-light mb-3 specialCard text-center">
+                <div class="card-header">
+                    <h3>Choose your Challenge</h3>
+                </div>
+                <div class="card-body">
+                    <div class="challenge-type">
+                        <label for="type">Challenge Type:</label>
+                        <select name="challenge" id="type">
+
+                            <option selected value="">Select Challenge Type</option>
+                            <option value="walking">Walking</option>
+                            {{!-- <option value="swimming">Swimming</option>
+                            <option value="hiking">Hiking</option>
+                            <option value="pullup">Pullup</option>
+                            <option value="running">Running</option> --}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
