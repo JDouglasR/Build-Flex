@@ -11,8 +11,8 @@ This group project was created to build our first full-stack app.  This web-app 
 * [Allison Barnard](https://github.com/allisonbarnard07)
 * [Josh Panakkal](https://github.com/jpanakkal22)
 * [Haymonot Wolde](https://github.com/haymanotyealemu)
-* [Justin Roose](https//github.com/jdouglasr)
-* [Michael Marcucci](https//github.com/kitetsu3)
+* [Justin Roose](https://github.com/jdouglasr)
+* [Michael Marcucci](https://github.com/kitetsu3)
 
 
 ### __Installation__
