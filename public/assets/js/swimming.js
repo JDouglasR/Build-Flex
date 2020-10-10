@@ -28,7 +28,7 @@ $(document).ready(() => {
       goal: goal,
       duration: duration,
       miles: miles
-    }).then(data => {
+    }).then(userData => {
       window.location.replace("/profile");
       // If there's an error, handle it by throwing up a bootstrap alert
     });

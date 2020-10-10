@@ -1,4 +1,5 @@
-// Requiring our models and passport as we've configured it
+// eslint-disable-next-line no-irregular-whitespace
+// Requiring our models and passport as we've configured it​
 const db = require("../models");
 const passport = require("../config/passport");
 
@@ -18,22 +19,15 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", (req, res) => {
-    db.User.create({
-      email: email,
-      password: password,
-      age: age,
-      firstName: firstName,
-      lastName: lastName
-    })
+    db.User.create(req.body)
 
       .then(() => {
-        res.redirect(307, "/api/login");
+        res.redirect("/members");
       })
       .catch(err => {
         res.status(401).json(err);
       });
   });
-
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
@@ -56,7 +50,7 @@ module.exports = function(app) {
   });
 
   // Route for posting all user challenge data to database
-  app.post("/api/user-data", (req, res) => {
+  app.post("/api/walking", (req, res) => {
     // console.log(req.body);
     db.allChallenges
       .create({
@@ -65,33 +59,39 @@ module.exports = function(app) {
         miles: req.body.miles,
         duration: req.body.duration,
         steps: req.body.steps,
-        UserId: req.body.id
+        UserId: req.body.UserId
       })
-      .then(allStats => {
-        res.json(allStats);
+      .then(walking => {
+        res.json(walking);
       });
   });
 
   // Route for getting all user challenge data from database
-  app.get("/api/all-stats", (req, res) => {
-    db.allChallenges.findAll({}).then(allStats => {
+  // app.get("/api/all-stats", (req, res) => {
+  //   db.allChallenges.findAll({}).then(allStats => {
+  //     // console.log(allStats);
+  //     res.json(allStats);
+
+  app.get("/api/walking", (req, res) => {
+    db.allChallenges.findAll({}).then(walking => {
       // console.log(allStats);
-      res.json(allStats);
+      res.json(walking);
 
-      // Maps all database information
-      const newArray = allStats.map(x => x.dataValues);
+      //   // Maps all database information
+      //   const newArray = allStats.map(x => x.dataValues);
 
-      // Filters out all data with RUN
-      // const filterArray = newArray.filter(y => {
-      //   return y.challenge === "run";
+      //   // Filters out all data with RUN
+      //   // const filterArray = newArray.filter(y => {
+      //   //   return y.challenge === "run";
+      //   // });
+
+      //   // Filter out all data with WALK
+      //   const filterArrayUserId = newArray.filter(y => {
+      //     return y.UserId === 8;
+      //   });
       // });
 
-      // Filter out all data with WALK
-      const filterArrayUserId = newArray.filter(z => {
-        return z.UserId === 8;
-      });
-
-      console.log(filterArrayUserId);
+      // console.log(filterArrayUserId);
     });
   });
 };

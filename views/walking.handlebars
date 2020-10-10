@@ -10,30 +10,47 @@
                 <div class="card-body">
                     <form class="walking-form" action="/api/walking" method="POST">
                         <div class="form-group row">
+                            <label for="id-input" class="col-sm-4 col-form-label"></label>
+                            <div class="col-sm-8">
+                                <input type="hidden" class="form-control" id="id-input" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="walk-input" class="col-sm-4 col-form-label"></label>
+                            <div class="col-sm-8">
+                                <input type="hidden" class="form-control" id="walk-input" value="walk">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="walking-goal" class="col-sm-2 col-form-label">Goals:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="walking-goal" name="goal" placeholder="What is your goal for this challenge">
+                                <input type="text" class="form-control" id="walking-goal" name="goal"
+                                    placeholder="What is your goal for this challenge">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="walking-steps" class="col-sm-2 col-form-label">Steps:</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="walking-steps" name="steps" placeholder="Enter goal for steps.">
+                                <input type="number" class="form-control" id="walking-steps" name="steps"
+                                    placeholder="Enter goal for steps.">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="walking-duration" class="col-sm-2 col-form-label">Duration:</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="walking-duration" name="duration" placeholder="Enter goal for time to complete.">
+                                <input type="number" class="form-control" id="walking-duration" name="duration"
+                                    placeholder="Enter goal for time to complete.">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="walking-miles" class="col-sm-2 col-form-label">Miles:</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="walking-miles" name="miles" placeholder="Enter goal for miles.">
+                                <input type="number" class="form-control" id="walking-miles" name="miles"
+                                    placeholder="Enter goal for miles.">
                             </div>
                         </div>
-                        <button type="button" class="btn btn-warning">Submit</button>
+                        <button type="button" class="btn btn-warning submit">Submit</button>
                     </form>
                 </div>
             </div>
